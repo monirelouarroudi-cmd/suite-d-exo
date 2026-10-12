@@ -321,3 +321,7 @@ $$\mathcal A=5^2=\boxed{25}$$
 
 1. Faire d'abord **1-A, 3-A, 4-A** (niveau du devoir blanc).
 2. Passer ensuite à **1-B, 3-B, 4-B** (un cran plus exigeants).
+
+µ
+
+
