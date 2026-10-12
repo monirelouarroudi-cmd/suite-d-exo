@@ -271,9 +271,9 @@ Pour atteindre $P(3;2;1)$, on doit avoir $a=3$, $b=2$, $c=1$ (unicité des coord
 
 **b. (1,5 pt)**
 
-*$R,S,T$ non alignés.* $\overrightarrow{RS}=(-3;3;0)$ et $\overrightarrow{RT}=(-3;0;3)$. Si ces vecteurs étaient colinéaires, on aurait $\overrightarrow{RT}=\lambda\overrightarrow{RS}$, d'où pour la troisième coordonnée $3=\lambda\times0$ : impossible. Les vecteurs ne sont pas colinéaires : **$R,S,T$ ne sont pas alignés**, ils définissent un plan.
+*$R,S,T$ non alignés.* $\overrightarrow{RS}=(-3;3;1)$ et $\overrightarrow{RT}=(-3;1;3)$. Si ces vecteurs étaient colinéaires, on aurait $\overrightarrow{RT}=\lambda\overrightarrow{RS}$, d'où pour la troisième coordonnée $3=\lambda\times0$ : impossible. Les vecteurs ne sont pas colinéaires : **$R,S,T$ ne sont pas alignés**, ils définissent un plan.
 
-*$M,N,L\in(RST)$.* Un point $X$ appartient à $(RST)$ si et seulement s'il existe $\alpha,\beta$ tels que $\overrightarrow{RX}=\alpha\overrightarrow{RS}+\beta\overrightarrow{RT}=(-3\alpha-3\beta\,;\,3\alpha\,;\,3\beta)$.
+*$M,N,L\in(RST)$.* Un point $X$ appartient à $(RST)$ si et seulement s'il existe $\alpha,\beta$ tels que $\overrightarrow{RX}=\alpha\overrightarrow{RS}+\beta\overrightarrow{RT}=(-3\alpha-3\beta\;\,3\alpha+b\,;\,3\beta+ALPHA)$.
 
 | Point | $\overrightarrow{RX}$ | $\alpha$ (2ᵉ coord.) | $\beta$ (3ᵉ coord.) | Vérification 1ʳᵉ coord. $-3\alpha-3\beta$ |
 |---|---|---|---|---|
