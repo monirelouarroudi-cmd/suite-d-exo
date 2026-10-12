@@ -1,357 +1,323 @@
-# 📝 Devoir blanc — Préparation au contrôle-bilan n°2
+# ➕ Exercices supplémentaires — Entraînement TG-E-02
 
 **Terminale · Spécialité Maths**
 
-| | |
-|---|---|
-| ⏱️ **Durée** | 1 h 45 |
-| 🧮 **Calculatrice** | autorisée |
-| 🎯 **Barème** | 20 points |
-| 📚 **Thèmes** | Vecteurs et repère de l'espace · Dénombrement et Python · Dérivées successives (formule de Leibniz) · Combinatoire appliquée à la géométrie |
-
-> Ce devoir blanc reprend **les mêmes thèmes, la même structure et la même répartition des points** que le sujet d'entraînement TG-E-02, mais avec des questions différentes. Il se travaille dans les conditions réelles : chronomètre lancé, rédaction complète, sans le cours.
+> Deux nouveaux exercices pour chacun des trois types du devoir blanc : **vecteurs dans le cube** (exercice 1), **formule de Leibniz** (exercice 3) et **repère dans un pavé** (exercice 4). Chaque exercice vaut **3 points** et est suivi de son corrigé détaillé.
 
 ---
 
 ## 📑 Sommaire
 
-- [Déroulement de la séance](#-déroulement-de-la-séance)
-- [Exercice 1 — Un alignement dans le cube](#exercice-1--un-alignement-dans-le-cube-3-points)
-- [Exercice 2 — Un programme à déchiffrer](#exercice-2--un-programme-à-déchiffrer-5-points)
-- [Exercice 3 — Formule de Leibniz](#exercice-3--formule-de-leibniz-3-points)
-- [Exercice 4 — Lire sur un pavé](#exercice-4--lire-sur-un-pavé-3-points)
-- [Exercice 5 — Problème : un robot](#exercice-5--problème--un-robot-6-points)
-- [Récapitulatif du barème](#-récapitulatif-du-barème)
-- [Notes pour le professeur](#-notes-pour-le-professeur)
+**Type exercice 1 — Vecteurs dans le cube**
+- [Exercice 1-A — Centre de gravité et alignement](#exercice-1-a--centre-de-gravité-et-alignement-3-points)
+- [Exercice 1-B — Un parallélogramme dans le cube](#exercice-1-b--un-parallélogramme-dans-le-cube-3-points)
+
+**Type exercice 3 — Formule de Leibniz**
+- [Exercice 3-A — Formule de Leibniz, niveau facile](#exercice-3-a--formule-de-leibniz-niveau-facile-3-points)
+- [Exercice 3-B — Formule de Leibniz, niveau difficile](#exercice-3-b--formule-de-leibniz-niveau-difficile-3-points)
+
+**Type exercice 4 — Repère dans un pavé**
+- [Exercice 4-A — Lire sur un pavé](#exercice-4-a--lire-sur-un-pavé-3-points)
+- [Exercice 4-B — Un quadrilatère dans le pavé](#exercice-4-b--un-quadrilatère-dans-le-pavé-3-points)
 
 ---
 
-## ⏳ Déroulement de la séance
+# 🧊 Type exercice 1 — Vecteurs dans le cube
 
-| Temps | Activité |
-|---|---|
-| 0–5 min | Consignes, mise en condition d'examen |
-| 5–110 min | **Devoir blanc** (1 h 45) — rédaction sur copie |
-| 110–120 min | Ramassage, autocorrection flash avec le corrigé, repérage des points faibles |
-
-> 💡 Si le temps manque, la correction détaillée peut se faire à la séance suivante : chaque corrigé est conçu pour être relu seul.
-
----
-
-## Exercice 1 — Un alignement dans le cube (3 points)
+## Exercice 1-A — Centre de gravité et alignement (3 points)
 
 $ABCDEFGH$ est un cube (base $ABCD$, face supérieure $EFGH$, avec $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$ et $H$ au-dessus de $D$).
 
-On note $K$ le point tel que $\overrightarrow{KA}+\overrightarrow{KC}+\overrightarrow{KF}=\vec 0$ (centre de gravité du triangle $ACF$).
+On note $K$ le point tel que $\overrightarrow{KA}+\overrightarrow{KC}+\overrightarrow{KH}=\vec 0$ (centre de gravité du triangle $ACH$).
 
-**a.** En introduisant le point $B$ dans chacun des trois vecteurs, démontrer que
-$$\overrightarrow{BK}=\frac13\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right).$$
+**a.** En introduisant le point $D$ dans chacun des trois vecteurs, démontrer que
+$$\overrightarrow{DK}=\frac13\left(\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DH}\right).$$
 
-**b.** Exprimer $\overrightarrow{BH}$ en fonction de $\overrightarrow{BA}$, $\overrightarrow{BC}$, $\overrightarrow{BF}$.
+**b.** Exprimer $\overrightarrow{DF}$ en fonction de $\overrightarrow{DA}$, $\overrightarrow{DC}$, $\overrightarrow{DH}$.
 
-**c.** En déduire que $B$, $K$ et $H$ sont alignés, et préciser la position de $K$ sur $[BH]$.
+**c.** En déduire que $D$, $K$ et $F$ sont alignés, et préciser la position de $K$ sur $[DF]$.
 
 <details>
-<summary><b>✅ Corrigé de l'exercice 1</b></summary>
+<summary><b>✅ Corrigé de l'exercice 1-A</b></summary>
 
 **a. (1 pt)** D'après la relation de Chasles :
 
-$$\overrightarrow{KA}=\overrightarrow{KB}+\overrightarrow{BA},\qquad \overrightarrow{KC}=\overrightarrow{KB}+\overrightarrow{BC},\qquad \overrightarrow{KF}=\overrightarrow{KB}+\overrightarrow{BF}$$
+$$\overrightarrow{KA}=\overrightarrow{KD}+\overrightarrow{DA},\qquad \overrightarrow{KC}=\overrightarrow{KD}+\overrightarrow{DC},\qquad \overrightarrow{KH}=\overrightarrow{KD}+\overrightarrow{DH}$$
 
 En additionnant et en utilisant l'hypothèse :
 
-$$3\overrightarrow{KB}+\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}=\vec0
-\ \Longrightarrow\ 3\overrightarrow{KB}=-\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)$$
+$$3\overrightarrow{KD}+\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DH}=\vec0
+\ \Longrightarrow\ 3\overrightarrow{KD}=-\left(\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DH}\right)$$
 
-Comme $\overrightarrow{BK}=-\overrightarrow{KB}$ :
+Comme $\overrightarrow{DK}=-\overrightarrow{KD}$ :
 
-$$\boxed{\overrightarrow{BK}=\frac13\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)}$$
+$$\boxed{\overrightarrow{DK}=\frac13\left(\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DH}\right)}$$
 
-**b. (1 pt)** Par Chasles : $\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{AD}+\overrightarrow{DH}$.
+**b. (1 pt)** Par Chasles : $\overrightarrow{DF}=\overrightarrow{DA}+\overrightarrow{AB}+\overrightarrow{BF}$.
 
-- $ABCD$ est un carré, donc $\overrightarrow{AD}=\overrightarrow{BC}$ ;
-- les arêtes verticales du cube sont parallèles et de même longueur, donc $\overrightarrow{DH}=\overrightarrow{BF}$.
+- $ABCD$ est un carré, donc $\overrightarrow{AB}=\overrightarrow{DC}$ ;
+- les arêtes verticales du cube sont parallèles et de même longueur, donc $\overrightarrow{BF}=\overrightarrow{DH}$.
 
-$$\boxed{\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}}$$
+$$\boxed{\overrightarrow{DF}=\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DH}}$$
 
 **c. (1 pt)** D'après a. et b. :
 
-$$\overrightarrow{BK}=\frac13\overrightarrow{BH}$$
+$$\overrightarrow{DK}=\frac13\overrightarrow{DF}$$
 
-Les vecteurs $\overrightarrow{BK}$ et $\overrightarrow{BH}$ sont colinéaires : **$B$, $K$, $H$ sont alignés**. De plus, le coefficient $\frac13$ est dans $[0;1]$ : $K$ appartient au segment $[BH]$, **au tiers de sa longueur à partir de $B$** ($BK=\frac13BH$).
-
-</details>
-
----
-
-## Exercice 2 — Un programme à déchiffrer (5 points)
-
-Un code d'accès est formé de **3 chiffres**, de `000` à `999`. On considère la fonction suivante.
-
-```python
-def mystere():
-    n = 0
-    for a in range(10):
-        for b in range(10):
-            for c in range(10):
-                if a < b < c:
-                    n = n + 1
-    return n
-```
-
-**a.** Combien de fois le test `if` est-il effectué ? Justifier par un dénombrement.
-
-**b.** Décrire en français les codes comptés par la fonction. Donner deux exemples et un contre-exemple.
-
-**c.** Expliquer pourquoi ces codes correspondent exactement aux parties à 3 éléments de $\{0,1,\dots,9\}$. En déduire la valeur renvoyée par la fonction.
-
-**d.** Combien de codes ont leurs trois chiffres distincts ? Quelle fraction d'entre eux est comptée par la fonction ? Expliquer ce rapport.
-
-**e.** Combien de codes comportent au moins deux chiffres égaux ?
-
-**f.** Écrire en Python la condition à placer dans le `if` pour que la fonction compte tous les codes dont les trois chiffres sont distincts. Quelle valeur renvoie alors la fonction ?
-
-<details>
-<summary><b>✅ Corrigé de l'exercice 2</b></summary>
-
-**a. (0,5 pt)** Il y a trois boucles imbriquées, chacune parcourant 10 valeurs (de 0 à 9) : le test est effectué
-$$10\times10\times10=10^3=\boxed{1000}\text{ fois}$$
-(un test par code possible, de `000` à `999`).
-
-**b. (1 pt)** La fonction compte les codes $abc$ dont les chiffres sont **strictement croissants** de gauche à droite ($a<b<c$).
-
-- Exemples : `013`, `489`.
-- Contre-exemple : `112` (deux chiffres égaux, donc pas strictement croissant) ; ou `210` (décroissant).
-
-**c. (1 pt)** À un code $abc$ vérifiant $a<b<c$, on associe l'ensemble $\{a,b,c\}$ : ses trois éléments sont distincts (inégalités strictes), c'est donc une partie à 3 éléments de $\{0,\dots,9\}$.
-
-Réciproquement, une partie à 3 éléments se range d'**une seule façon** dans l'ordre croissant, ce qui donne **un unique** code $a<b<c$.
-
-On a ainsi une correspondance un-à-un entre ces codes et les parties à 3 éléments. La fonction renvoie donc le nombre de parties à 3 éléments d'un ensemble à 10 éléments :
-
-$$\binom{10}{3}=\frac{10\times9\times8}{3\times2\times1}=\boxed{120}$$
-
-**d. (1 pt)** Codes à chiffres distincts : 10 choix pour $a$, 9 pour $b\neq a$, 8 pour $c$ :
-$$10\times9\times8=\boxed{720}$$
-
-Fraction comptée par la fonction :
-$$\frac{120}{720}=\boxed{\frac16}$$
-
-**Explication :** chaque partie $\{a,b,c\}$ fournit $3!=6$ codes à chiffres distincts (les $6$ ordres possibles), et **un seul** de ces six codes est rangé dans l'ordre croissant. La fonction compte donc « un code sur six ».
-
-**e. (0,5 pt)** Par passage au complémentaire : $1000-720=\boxed{280}$ codes comportent au moins deux chiffres égaux.
-
-*(Vérification : 10 codes aux trois chiffres égaux + $3\times10\times9=270$ codes avec exactement deux chiffres égaux $=280$.)*
-
-**f. (1 pt)** Condition :
-
-```python
-if a != b and a != c and b != c:
-```
-
-La fonction renvoie alors $\boxed{720}$.
+Les vecteurs $\overrightarrow{DK}$ et $\overrightarrow{DF}$ sont colinéaires : **$D$, $K$, $F$ sont alignés**. Le coefficient $\frac13$ est dans $[0;1]$ : $K$ appartient au segment $[DF]$, **au tiers de sa longueur à partir de $D$** ($DK=\frac13DF$).
 
 </details>
 
 ---
 
-## Exercice 3 — Formule de Leibniz (3 points)
+## Exercice 1-B — Un parallélogramme dans le cube (3 points)
 
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2e^{-x}$.
+$ABCDEFGH$ est un cube (mêmes conventions que ci-dessus). On note $I$ le milieu de $[AE]$ et $J$ le milieu de $[CG]$.
 
-**a.** Donner, pour tout entier $j$, la dérivée $j$-ième de $x\mapsto e^{-x}$ (sans démonstration).
+**a.** Démontrer que $\overrightarrow{AI}=\overrightarrow{CJ}$.
 
-**b.** À l'aide de la formule de Leibniz, démontrer que, pour tout entier $n\geqslant2$,
-$$f^{(n)}(x)=(-1)^n\,e^{-x}\Big(x^2-2nx+n(n-1)\Big).$$
+**b.** En déduire que $\overrightarrow{IJ}=\overrightarrow{AC}$, puis la nature du quadrilatère $AIJC$.
 
-**c.** Vérifier que la formule est aussi vraie pour $n=1$, par un calcul direct de $f'$.
-
-**d.** Calculer $f^{(10)}(0)$.
+**c.** On note $K$ le milieu de $[IC]$. Démontrer que $K$ est aussi le milieu de $[AJ]$.
 
 <details>
-<summary><b>✅ Corrigé de l'exercice 3</b></summary>
+<summary><b>✅ Corrigé de l'exercice 1-B</b></summary>
+
+**a. (1 pt)** $I$ est le milieu de $[AE]$ : $\overrightarrow{AI}=\frac12\overrightarrow{AE}$.
+$J$ est le milieu de $[CG]$ : $\overrightarrow{CJ}=\frac12\overrightarrow{CG}$.
+
+Les arêtes verticales du cube sont parallèles, de même longueur et de même sens : $\overrightarrow{AE}=\overrightarrow{CG}$. Donc
+
+$$\boxed{\overrightarrow{AI}=\overrightarrow{CJ}}$$
+
+**b. (1 pt)** Par Chasles :
+
+$$\overrightarrow{IJ}=\overrightarrow{IA}+\overrightarrow{AC}+\overrightarrow{CJ}=-\overrightarrow{AI}+\overrightarrow{AC}+\overrightarrow{CJ}$$
+
+Comme $\overrightarrow{CJ}=\overrightarrow{AI}$ (question a.), il reste :
+
+$$\boxed{\overrightarrow{IJ}=\overrightarrow{AC}}$$
+
+On a $\overrightarrow{AI}=\overrightarrow{CJ}$ et $\overrightarrow{IJ}=\overrightarrow{AC}$ : les côtés opposés de $AIJC$ sont représentés par des vecteurs égaux, donc **$AIJC$ est un parallélogramme**.
+
+*(C'est même un rectangle, car $(AE)$ est perpendiculaire au plan $(ABC)$, donc à $(AC)$.)*
+
+**c. (1 pt)** $K$ est le milieu de $[IC]$ : $\overrightarrow{AK}=\frac12\left(\overrightarrow{AI}+\overrightarrow{AC}\right)$.
+
+Soit $M$ le milieu de $[AJ]$. Alors, avec Chasles et $\overrightarrow{IJ}=\overrightarrow{AC}$ :
+
+$$\overrightarrow{AM}=\frac12\overrightarrow{AJ}=\frac12\left(\overrightarrow{AI}+\overrightarrow{IJ}\right)=\frac12\left(\overrightarrow{AI}+\overrightarrow{AC}\right)$$
+
+Donc $\overrightarrow{AK}=\overrightarrow{AM}$, d'où $K=M$ : **$K$ est aussi le milieu de $[AJ]$**.
+
+*(C'est la propriété des diagonales d'un parallélogramme : elles se coupent en leur milieu.)*
+
+</details>
+
+---
+
+# 📐 Type exercice 3 — Formule de Leibniz
+
+## Exercice 3-A — Formule de Leibniz, niveau facile (3 points)
+
+Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x\,e^{2x}$.
+
+**a.** Donner, pour tout entier $j$, la dérivée $j$-ième de $x\mapsto e^{2x}$ (sans démonstration).
+
+**b.** À l'aide de la formule de Leibniz, démontrer que, pour tout entier $n\geqslant1$,
+$$g^{(n)}(x)=2^{n-1}\,e^{2x}\,(2x+n).$$
+
+**c.** Vérifier que la formule est aussi vraie pour $n=0$.
+
+**d.** Calculer $g^{(8)}(0)$.
+
+<details>
+<summary><b>✅ Corrigé de l'exercice 3-A</b></summary>
 
 **a. (0,5 pt)** Pour tout entier $j$ :
-$$\left(e^{-x}\right)^{(j)}=(-1)^j\,e^{-x}$$
+$$\left(e^{2x}\right)^{(j)}=2^j\,e^{2x}$$
 
-**b. (1,5 pt)** Posons $u(x)=x^2$ et $v(x)=e^{-x}$. La formule de Leibniz donne :
+**b. (1,5 pt)** Posons $u(x)=x$ et $v(x)=e^{2x}$. La formule de Leibniz donne :
 
-$$f^{(n)}=\sum_{k=0}^{n}\binom nk\,u^{(k)}\,v^{(n-k)}$$
+$$g^{(n)}=\sum_{k=0}^{n}\binom nk\,u^{(k)}\,v^{(n-k)}$$
 
-Les dérivées de $u$ sont $u'(x)=2x$, $u''(x)=2$ et $u^{(k)}=0$ pour $k\geqslant3$. Seuls les termes $k=0,1,2$ subsistent (ils existent bien car $n\geqslant2$) :
+Ici $u'(x)=1$ et $u^{(k)}=0$ pour $k\geqslant2$. Seuls les termes $k=0$ et $k=1$ subsistent (ils existent bien car $n\geqslant1$) :
 
-$$f^{(n)}(x)=\binom n0x^2(-1)^ne^{-x}+\binom n1\,2x\,(-1)^{n-1}e^{-x}+\binom n2\,2\,(-1)^{n-2}e^{-x}$$
+$$g^{(n)}(x)=\binom n0\,x\,2^ne^{2x}+\binom n1\times1\times2^{n-1}e^{2x}=2^ne^{2x}x+n\,2^{n-1}e^{2x}$$
 
-Or $(-1)^{n-1}=-(-1)^n$, $(-1)^{n-2}=(-1)^n$, $\binom n1=n$ et $\binom n2\times2=n(n-1)$. En factorisant par $(-1)^ne^{-x}$ :
+Comme $2^n=2^{n-1}\times2$, on factorise par $2^{n-1}e^{2x}$ :
 
-$$\boxed{f^{(n)}(x)=(-1)^n\,e^{-x}\Big(x^2-2nx+n(n-1)\Big)}$$
+$$\boxed{g^{(n)}(x)=2^{n-1}\,e^{2x}\,(2x+n)}$$
 
+**c. (0,5 pt)** Pour $n=0$, la formule donne
+$$2^{-1}e^{2x}(2x+0)=\frac12\times2x\,e^{2x}=x\,e^{2x}=g(x)$$
+qui est bien $g^{(0)}=g$ ✓.
 
-**c. (0,5 pt)** Calcul direct :
-$$f'(x)=2xe^{-x}-x^2e^{-x}=e^{-x}(2x-x^2)=-e^{-x}(x^2-2x)$$
+*(Vérification supplémentaire pour $n=1$ : $g'(x)=e^{2x}+2xe^{2x}=e^{2x}(2x+1)$, et la formule donne $2^0e^{2x}(2x+1)$ ✓.)*
 
-La formule pour $n=1$ donne $(-1)^1e^{-x}\big(x^2-2x+1\times0\big)=-e^{-x}(x^2-2x)$ : **identique** ✓.
-
-**d. (0,5 pt)** Avec $n=10$ et $x=0$ :
-$$f^{(10)}(0)=(-1)^{10}e^{0}\big(0-0+10\times9\big)=\boxed{90}$$
+**d. (0,5 pt)** Avec $n=8$ et $x=0$ :
+$$g^{(8)}(0)=2^{7}\,e^{0}\,(0+8)=128\times8=\boxed{1024}$$
 
 </details>
 
 ---
 
-## Exercice 4 — Lire sur un pavé (3 points)
+## Exercice 3-B — Formule de Leibniz, niveau difficile (3 points)
 
-$ABCDEFGH$ est un pavé droit avec $AB=6$, $AD=4$ et $AE=2$ (base $ABCD$, $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$, $H$ au-dessus de $D$). On le rapporte au repère orthonormé d'origine $A$ dont les axes portent $(AB)$, $(AD)$, $(AE)$.
+Soit $h$ la fonction définie sur $\mathbb{R}$ par $h(x)=x^3e^{x}$.
+
+**a.** Donner, pour tout entier $j$, la dérivée $j$-ième de $x\mapsto e^{x}$ (sans démonstration).
+
+**b.** À l'aide de la formule de Leibniz, démontrer que, pour tout entier $n\geqslant3$,
+$$h^{(n)}(x)=e^{x}\Big(x^3+3n\,x^2+3n(n-1)\,x+n(n-1)(n-2)\Big).$$
+
+**c.** Vérifier que la formule est aussi vraie pour $n=2$, par un calcul direct de $h''$.
+
+**d.** Calculer $h^{(6)}(0)$.
+
+<details>
+<summary><b>✅ Corrigé de l'exercice 3-B</b></summary>
+
+**a. (0,5 pt)** Pour tout entier $j$ :
+$$\left(e^{x}\right)^{(j)}=e^{x}$$
+
+**b. (1,5 pt)** Posons $u(x)=x^3$ et $v(x)=e^{x}$. Les dérivées de $u$ sont :
+$$u'(x)=3x^2,\qquad u''(x)=6x,\qquad u'''(x)=6,\qquad u^{(k)}=0\ \text{pour }k\geqslant4$$
+
+Seuls les termes $k=0,1,2,3$ subsistent (ils existent bien car $n\geqslant3$). Comme toutes les dérivées de $v$ valent $e^x$ :
+
+$$h^{(n)}(x)=e^{x}\left[\binom n0x^3+\binom n1\,3x^2+\binom n2\,6x+\binom n3\,6\right]$$
+
+Or :
+
+- $\binom n1\times3=3n$ ;
+- $\binom n2\times6=\dfrac{n(n-1)}2\times6=3n(n-1)$ ;
+- $\binom n3\times6=\dfrac{n(n-1)(n-2)}6\times6=n(n-1)(n-2)$.
+
+$$\boxed{h^{(n)}(x)=e^{x}\Big(x^3+3n\,x^2+3n(n-1)\,x+n(n-1)(n-2)\Big)}$$
+
+**c. (0,5 pt)** Calcul direct :
+
+$$h'(x)=3x^2e^x+x^3e^x=e^x(x^3+3x^2)$$
+
+$$h''(x)=e^x(x^3+3x^2)+e^x(3x^2+6x)=e^x(x^3+6x^2+6x)$$
+
+La formule pour $n=2$ donne : $e^x\big(x^3+6x^2+3\times2\times1\,x+2\times1\times0\big)=e^x(x^3+6x^2+6x)$ : **identique** ✓.
+
+**d. (0,5 pt)** Avec $n=6$ et $x=0$, seul le terme constant subsiste :
+$$h^{(6)}(0)=e^0\times\big(6\times5\times4\big)=\boxed{120}$$
+
+</details>
+
+---
+
+# 📦 Type exercice 4 — Repère dans un pavé
+
+## Exercice 4-A — Lire sur un pavé (3 points)
+
+$ABCDEFGH$ est un pavé droit avec $AB=4$, $AD=6$ et $AE=2$ (base $ABCD$, $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$, $H$ au-dessus de $D$). On le rapporte au repère orthonormé d'origine $A$ dont les axes portent $(AB)$, $(AD)$, $(AE)$.
 
 **a.** Donner les coordonnées de $C$, $F$, $G$ et $H$.
 
-**b.** $I$ est le milieu de $[EH]$ et $J$ celui de $[BC]$. Calculer leurs coordonnées et montrer que $(IJ)$ est parallèle à $(BE)$.
+**b.** $I$ est le milieu de $[BG]$ et $J$ celui de $[AH]$. Calculer leurs coordonnées et montrer que $(IJ)$ est parallèle à $(AB)$.
 
-**c.** $K$ est le point tel que $\overrightarrow{AK}=\dfrac12\overrightarrow{AG}$. Démontrer que $K$ est le milieu de $[IJ]$.
+**c.** $K$ est le point tel que $\overrightarrow{AK}=\dfrac12\overrightarrow{AG}$. Démontrer que $K$ est le milieu de $[IJ]$, puis calculer la distance $AK$.
 
 <details>
-<summary><b>✅ Corrigé de l'exercice 4</b></summary>
+<summary><b>✅ Corrigé de l'exercice 4-A</b></summary>
 
-**a. (0,5 pt)** Dans le repère $(A;\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AE})$ (orthonormé, avec les longueurs réelles) : $A(0;0;0)$, $B(6;0;0)$, $D(0;4;0)$, $E(0;0;2)$, d'où
+**a. (0,5 pt)** Dans le repère $(A;\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AE})$ : $A(0;0;0)$, $B(4;0;0)$, $D(0;6;0)$, $E(0;0;2)$, d'où
 
-$$C(6;4;0),\qquad F(6;0;2),\qquad G(6;4;2),\qquad H(0;4;2)$$
+$$C(4;6;0),\qquad F(4;0;2),\qquad G(4;6;2),\qquad H(0;6;2)$$
 
-**b. (1,5 pt)** $E(0;0;2)$ et $H(0;4;2)$ donnent $I=\left(0;\,2;\,2\right)$.
-$B(6;0;0)$ et $C(6;4;0)$ donnent $J=\left(6;\,2;\,0\right)$.
+**b. (1,5 pt)** $B(4;0;0)$ et $G(4;6;2)$ donnent $I=\left(4;\,3;\,1\right)$.
+$A(0;0;0)$ et $H(0;6;2)$ donnent $J=\left(0;\,3;\,1\right)$.
 
-$$\overrightarrow{IJ}=(6;0;-2),\qquad \overrightarrow{BE}=(0-6;\,0-0;\,2-0)=(-6;0;2)$$
+$$\overrightarrow{IJ}=(0-4;\,3-3;\,1-1)=(-4;0;0),\qquad \overrightarrow{AB}=(4;0;0)$$
 
-On remarque $\overrightarrow{BE}=-\overrightarrow{IJ}$ : les vecteurs sont colinéaires, donc **$(IJ)$ est parallèle à $(BE)$**.
+On remarque $\overrightarrow{IJ}=-\overrightarrow{AB}$ : les vecteurs sont colinéaires, donc **$(IJ)$ est parallèle à $(AB)$**.
 
-*(Les droites sont bien distinctes : $(BE)$ est contenue dans le plan $y=0$, alors que $I$ a pour ordonnée $2$.)*
+*(Les droites sont bien distinctes : $(AB)$ est l'ensemble des points d'ordonnée $0$ et de cote $0$, alors que $I$ a pour ordonnée $3$.)*
 
-**c. (1 pt)** $\overrightarrow{AG}=(6;4;2)$, donc $\overrightarrow{AK}=\frac12\overrightarrow{AG}=(3;2;1)$ et $K(3;2;1)$.
+**c. (1 pt)** $\overrightarrow{AG}=(4;6;2)$, donc $\overrightarrow{AK}=\frac12\overrightarrow{AG}=(2;3;1)$ et $K(2;3;1)$.
 
 Milieu de $[IJ]$ :
-$$\left(\frac{0+6}2\,;\,\frac{2+2}2\,;\,\frac{2+0}2\right)=(3;2;1)=K$$
+$$\left(\frac{4+0}2\,;\,\frac{3+3}2\,;\,\frac{1+1}2\right)=(2;3;1)=K$$
 
 **$K$ est donc le milieu de $[IJ]$** (c'est aussi le centre du pavé).
 
+Distance :
+$$AK=\sqrt{2^2+3^2+1^2}=\boxed{\sqrt{14}}$$
+
 </details>
 
 ---
 
-## Exercice 5 — Problème : un robot (6 points)
+## Exercice 4-B — Un quadrilatère dans le pavé (3 points)
 
-Dans un repère $(O;\vec\imath,\vec\jmath,\vec k)$, un robot part de $O(0;0;0)$ et avance **par pas** : chaque pas est une translation de vecteur $\vec\imath$, $\vec\jmath$ ou $\vec k$. Il doit rejoindre $P(3;2;1)$. Un chemin est noté par la liste de ses pas ; par exemple $\vec\imath\,\vec\imath\,\vec\jmath\,\vec k\,\vec\imath\,\vec\jmath$.
+$ABCDEFGH$ est un pavé droit avec $AB=5$, $AD=4$ et $AE=3$ (base $ABCD$, $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$, $H$ au-dessus de $D$). On le rapporte au repère orthonormé d'origine $A$ dont les axes portent $(AB)$, $(AD)$, $(AE)$.
 
-### Partie A — géométrie
+**a.** Donner les coordonnées de $C$, $F$, $G$ et $H$.
 
-**a.** Justifier qu'après un chemin comportant $a$ pas $\vec\imath$, $b$ pas $\vec\jmath$ et $c$ pas $\vec k$, le robot est au point $(a;b;c)$. Combien de pas de chaque sorte comporte un chemin de $O$ à $P$ ?
+**b.** Calculer les coordonnées des milieux de $[AG]$ et de $[BH]$. Que peut-on en déduire pour le quadrilatère $ABGH$ ?
 
-**b.** Après trois pas, le robot peut être en $R(3;0;0)$, $S(0;3;0)$, $T(0;0;3)$, $M(2;1;0)$, $N(0;2;1)$ ou $L(1;0;2)$. Démontrer que $R$, $S$, $T$ ne sont pas alignés, puis que $M$, $N$ et $L$ appartiennent au plan $(RST)$.
-
-### Partie B — dénombrement
-
-**a.** Combien de chemins mènent de $O$ à $P$ ? (On pourra choisir d'abord la place des pas $\vec\imath$, puis celle des pas $\vec\jmath$.)
-
-**b.** Combien de ces chemins passent par le point $Q(1;1;1)$ ?
-
-**c.** Combien l'évitent ?
-
-**d.** Combien de chemins passent par le point $U(2;0;1)$ ?
-
-> 🌟 **Question bonus (non notée).** Un chemin peut-il passer à la fois par $Q$ et par $U$ ? Justifier.
+**c.** Montrer que $ABGH$ est un carré, puis calculer son aire.
 
 <details>
-<summary><b>✅ Corrigé de l'exercice 5</b></summary>
+<summary><b>✅ Corrigé de l'exercice 4-B</b></summary>
 
-### Partie A — géométrie
+**a. (0,5 pt)** Dans le repère $(A;\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AE})$ : $A(0;0;0)$, $B(5;0;0)$, $D(0;4;0)$, $E(0;0;3)$, d'où
 
-**a. (1 pt)** Chaque pas ajoute un vecteur : après $a$ pas $\vec\imath$, $b$ pas $\vec\jmath$ et $c$ pas $\vec k$ (dans n'importe quel ordre, l'addition vectorielle étant commutative), le robot est en $M$ tel que
-$$\overrightarrow{OM}=a\,\vec\imath+b\,\vec\jmath+c\,\vec k$$
-donc $M(a;b;c)$.
-
-Pour atteindre $P(3;2;1)$, on doit avoir $a=3$, $b=2$, $c=1$ (unicité des coordonnées) : un chemin de $O$ à $P$ comporte **3 pas $\vec\imath$, 2 pas $\vec\jmath$ et 1 pas $\vec k$**, soit 6 pas en tout.
+$$C(5;4;0),\qquad F(5;0;3),\qquad G(5;4;3),\qquad H(0;4;3)$$
 
 **b. (1,5 pt)**
 
-*$R,S,T$ non alignés.* $\overrightarrow{RS}=(-3;3;1)$ et $\overrightarrow{RT}=(-3;1;3)$. Si ces vecteurs étaient colinéaires, on aurait $\overrightarrow{RT}=\lambda\overrightarrow{RS}$, d'où pour la troisième coordonnée $3=\lambda\times0$ : impossible. Les vecteurs ne sont pas colinéaires : **$R,S,T$ ne sont pas alignés**, ils définissent un plan.
+Milieu de $[AG]$ : $\left(\dfrac{0+5}2\,;\,\dfrac{0+4}2\,;\,\dfrac{0+3}2\right)=\left(\dfrac52;\,2;\,\dfrac32\right)$.
 
-*$M,N,L\in(RST)$.* Un point $X$ appartient à $(RST)$ si et seulement s'il existe $\alpha,\beta$ tels que $\overrightarrow{RX}=\alpha\overrightarrow{RS}+\beta\overrightarrow{RT}=(-3\alpha-3\beta\;\,3\alpha+b\,;\,3\beta+ALPHA)$.
+Milieu de $[BH]$ : $\left(\dfrac{5+0}2\,;\,\dfrac{0+4}2\,;\,\dfrac{0+3}2\right)=\left(\dfrac52;\,2;\,\dfrac32\right)$.
 
-| Point | $\overrightarrow{RX}$ | $\alpha$ (2ᵉ coord.) | $\beta$ (3ᵉ coord.) | Vérification 1ʳᵉ coord. $-3\alpha-3\beta$ |
-|---|---|---|---|---|
-| $M(2;1;0)$ | $(-1;1;0)$ | $\frac13$ | $0$ | $-1$ ✓ |
-| $N(0;2;1)$ | $(-3;2;1)$ | $\frac23$ | $\frac13$ | $-2-1=-3$ ✓ |
-| $L(1;0;2)$ | $(-2;0;2)$ | $0$ | $\frac23$ | $-2$ ✓ |
+Les deux milieux sont **confondus**. Les diagonales $[AG]$ et $[BH]$ du quadrilatère $ABGH$ ont le même milieu : **$ABGH$ est un parallélogramme**.
 
-Les trois points appartiennent donc au plan $(RST)$.
+**c. (1 pt)** $\overrightarrow{AB}=(5;0;0)$ et $\overrightarrow{AH}=(0;4;3)$.
 
-> 💡 **Autre façon de voir :** le plan $(RST)$ a pour équation $x+y+z=3$, et après trois pas, la somme des coordonnées vaut toujours $3$.
+- Produit scalaire : $\overrightarrow{AB}\cdot\overrightarrow{AH}=5\times0+0\times4+0\times3=0$, donc $(AB)\perp(AH)$ : le parallélogramme a un angle droit, c'est un **rectangle**.
+- Longueurs : $AB=5$ et $AH=\sqrt{0^2+4^2+3^2}=\sqrt{25}=5$.
 
-### Partie B — dénombrement
+Deux côtés consécutifs sont égaux : **$ABGH$ est un carré** de côté $5$, d'aire
 
-**a. (1 pt)** Un chemin comporte 6 pas. On choisit les places des 3 pas $\vec\imath$ parmi 6 : $\binom63=20$ façons. Parmi les 3 places restantes, on choisit celles des 2 pas $\vec\jmath$ : $\binom32=3$ façons. Le pas $\vec k$ occupe la dernière place.
-
-$$20\times3=\boxed{60\text{ chemins}}$$
-
-**b. (1 pt)** Passer par $Q(1;1;1)$ se fait forcément au bout de 3 pas ($1+1+1=3$) :
-
-- de $O$ à $Q$ : un pas $\vec\imath$, un $\vec\jmath$, un $\vec k$ dans un ordre quelconque, soit $3!=6$ chemins ;
-- de $Q$ à $P$ : $\overrightarrow{QP}=(2;1;0)$, donc 2 pas $\vec\imath$ et 1 pas $\vec\jmath$ : $\binom32=3$ chemins.
-
-Par le principe multiplicatif : $6\times3=\boxed{18\text{ chemins}}$.
-
-**c. (0,5 pt)** Chemins évitant $Q$ : $60-18=\boxed{42}$.
-
-**d. (1 pt)** Passer par $U(2;0;1)$ se fait au bout de 3 pas :
-
-- de $O$ à $U$ : 2 pas $\vec\imath$ et 1 pas $\vec k$ : $\binom31=3$ chemins ;
-- de $U$ à $P$ : $\overrightarrow{UP}=(1;2;0)$, donc 1 pas $\vec\imath$ et 2 pas $\vec\jmath$ : $3$ chemins.
-
-$$3\times3=\boxed{9\text{ chemins}}$$
-
-**🌟 Bonus.** Non : $Q$ et $U$ sont deux points **distincts** atteints tous deux après exactement 3 pas. Le robot ne peut pas être en deux endroits différents au bout de 3 pas : aucun chemin ne passe par les deux (0 chemin).
+$$\mathcal A=5^2=\boxed{25}$$
 
 </details>
 
 ---
 
-## 📊 Récapitulatif du barème
+## 📊 Barème de chaque exercice
 
-| Exercice | Thème | Points | Note élève |
-|---|---|:---:|:---:|
-| 1 | Vecteurs, centre de gravité, alignement dans le cube | 3 | … |
-| 2 | Python et dénombrement (parties, complémentaire) | 5 | … |
-| 3 | Dérivées successives, formule de Leibniz | 3 | … |
-| 4 | Repère orthonormé dans un pavé | 3 | … |
-| 5 | Problème : robot (géométrie + dénombrement) | 6 | … |
-| | **Total** | **20** | … |
+| Exercice | Thème | Points |
+|---|---|:---:|
+| 1-A | Centre de gravité, Chasles, alignement | 3 |
+| 1-B | Égalité de vecteurs, parallélogramme, milieux | 3 |
+| 3-A | Leibniz avec $xe^{2x}$ (2 termes) | 3 |
+| 3-B | Leibniz avec $x^3e^{x}$ (4 termes) | 3 |
+| 4-A | Coordonnées, milieux, parallélisme, distance | 3 |
+| 4-B | Milieux, parallélogramme, carré (produit scalaire) | 3 |
 
 ---
 
 ## 🧑‍🏫 Notes pour le professeur
 
-### Rappels nécessaires à la correction
-
-- **Chasles :** $\overrightarrow{AB}=\overrightarrow{AC}+\overrightarrow{CB}$ ; centre de gravité $G$ de $ABC$ : $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
-- **Leibniz :** $(uv)^{(n)}=\displaystyle\sum_{k=0}^{n}\binom nk\,u^{(k)}v^{(n-k)}$ ; $\ (e^{ax})^{(j)}=a^je^{ax}$.
-- **Dénombrement :** principe multiplicatif, $\dbinom nk=\dfrac{n!}{k!\,(n-k)!}$, passage au complémentaire.
-
 ### Erreurs fréquentes à surveiller
 
 | Exercice | Piège |
 |---|---|
-| 1 | Oublier que $\overrightarrow{KB}=-\overrightarrow{BK}$ ; ne pas justifier $\overrightarrow{AD}=\overrightarrow{BC}$ et $\overrightarrow{DH}=\overrightarrow{BF}$ |
-| 2 | Confondre $10^3$ (tous les codes) et $\binom{10}{3}$ (codes croissants) ; ne pas expliquer le rapport $\frac16=\frac1{3!}$ |
-| 3 | Oublier que $u^{(k)}=0$ pour $k\geqslant3$ ; se tromper sur $(-1)^{n-1}$ ; ne pas factoriser |
-| 4 | Conclure « parallèle » sans mentionner la colinéarité des vecteurs |
-| 5 | Confondre « passer par $Q$ » et « finir en $Q$ » ; oublier de multiplier les deux étapes (avant / après le point) |
+| 1-A | Oublier que $\overrightarrow{KD}=-\overrightarrow{DK}$ ; ne pas justifier $\overrightarrow{AB}=\overrightarrow{DC}$ et $\overrightarrow{BF}=\overrightarrow{DH}$ |
+| 1-B | Écrire « $AIJC$ est un parallélogramme » sans avoir démontré les deux égalités de vecteurs |
+| 3-A | Oublier de factoriser par $2^{n-1}$ ; confondre $2^n$ et $2^{n-1}$ |
+| 3-B | Oublier un terme de la somme ($k=3$) ; se tromper sur $\binom n2\times6$ et $\binom n3\times6$ |
+| 4-A | Conclure « parallèle » sans mentionner la colinéarité ; oublier la racine dans la distance |
+| 4-B | Conclure « carré » avec un seul angle droit sans comparer deux côtés consécutifs |
 
-### Grille d'observation
+### Progression conseillée
 
-- [ ] Rédige proprement chaque démonstration vectorielle
-- [ ] Sait lire un programme et le traduire en dénombrement
-- [ ] Maîtrise le passage au complémentaire
-- [ ] Applique correctement la formule de Leibniz
-- [ ] Lit et calcule des coordonnées dans un repère de l'espace
-- [ ] Décompose un chemin en étapes (principe multiplicatif)
-- [ ] Gère son temps sur 1 h 45
-- [ ] Erreurs surtout calculatoires
-- [ ] Erreurs surtout méthodologiques / de rédaction
+1. Faire d'abord **1-A, 3-A, 4-A** (niveau du devoir blanc).
+2. Passer ensuite à **1-B, 3-B, 4-B** (un cran plus exigeants).
